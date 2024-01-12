@@ -24,7 +24,7 @@ public class CourseModel {
     private float price;
     @ManyToMany(fetch=FetchType.EAGER,cascade=CascadeType.ALL)
     @JoinTable(
-    	    name = "course_images",
+    	    name = "images",
     	    joinColumns = @JoinColumn(name = "COURSE_ID"),
     	    inverseJoinColumns = @JoinColumn(name = "IMAGE_ID")
     	)
